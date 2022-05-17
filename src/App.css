@@ -1,38 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Ubuntu&display=swap');
+/* font-family: 'Barlow', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
 .App {
+    font-family: 'Barlow', sans-serif;
   text-align: center;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.light {
+    background-color: #f9f4f4;
+    color: #242B2E;
+    transition-property: background-color;
+    transition-duration: 1.5s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dark {
+    background-color: #242B2E;
+    color: #f9f4f4;
+    transition-property: background-color;
+    transition-duration: 1.5s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+/* CSS for toggle button */
+.toggle-btn {
+    float: right;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn, .btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-outline-dark, .btn-outline-dark:focus {
+    background-color: #242B2E;
+    color: #f9f4f4;
+    border: 1px solid #f9f4f4;
+}
+
+.btn-outline-dark:hover {
+    background-color: #f9f4f4;
+    color: #242B2E;
+}
+
+.btn-outline-light, .btn-outline-light:focus {
+    background-color: #f9f4f4;
+    color: #242B2E;
+    border: 1px solid #242B2E;
+}
+
+.btn-outline-light:hover {
+    background-color: #242B2E;
+    color: #f9f4f4;
 }
