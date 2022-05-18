@@ -1,62 +1,116 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Ubuntu&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Ubuntu&display=swap");
 /* font-family: 'Barlow', sans-serif;
 font-family: 'Ubuntu', sans-serif; */
 
+html > body {
+  overflow-x: hidden;
+}
+
 .App {
-    font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
   text-align: center;
-  height: 100vh;
+  margin: 0;
 }
 
 .light {
-    background-color: #f9f4f4;
-    color: #242B2E;
-    transition-property: background-color;
-    transition-duration: 1.5s;
+  background-color: #f9f4f4;
+  color: #242b2e;
+  transition-property: background-color;
+  transition-duration: 1.5s;
 }
 
 .dark {
-    background-color: #242B2E;
-    color: #f9f4f4;
-    transition-property: background-color;
-    transition-duration: 1.5s;
-}
-
-
-
-h1 {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
+  background-color: #242b2e;
+  color: #f9f4f4;
+  transition-property: background-color;
+  transition-duration: 1.5s;
 }
 
 /* CSS for toggle button */
 .toggle-btn {
-    float: right;
+  float: right;
 }
 
-.btn, .btn:focus {
-    outline: none;
-    box-shadow: none;
+.btn,
+.btn:focus {
+  border: 0;
+  outline: none;
+  box-shadow: none;
 }
 
-.btn-outline-dark, .btn-outline-dark:focus {
-    background-color: #242B2E;
-    color: #f9f4f4;
-    border: 1px solid #f9f4f4;
+.btn-outline-dark,
+.btn-outline-dark:focus {
+  background-color: #242b2e;
+  color: #f9f4f4;
+  border: 1px solid #f9f4f4;
 }
 
 .btn-outline-dark:hover {
-    background-color: #f9f4f4;
-    color: #242B2E;
+  background-color: #f9f4f4;
+  color: #242b2e;
 }
 
-.btn-outline-light, .btn-outline-light:focus {
-    background-color: #f9f4f4;
-    color: #242B2E;
-    border: 1px solid #242B2E;
+.btn-outline-light,
+.btn-outline-light:focus {
+  background-color: #f9f4f4;
+  color: #242b2e;
+  border: 1px solid #242b2e;
 }
 
 .btn-outline-light:hover {
-    background-color: #242B2E;
-    color: #f9f4f4;
+  background-color: #242b2e;
+  color: #f9f4f4;
+}
+
+/* Top heading */
+h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+}
+
+/* seprator */
+hr {
+  width: 10%;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #eb6841;
+  border-top: 3px solid #eb6841;
+  border-radius: 2px;
+}
+
+/* Menu buttons */
+.menu-btn {
+  color: #eb6841;
+  font-weight: bold;
+  margin: 3px;
+}
+.menu-btn:hover {
+  background-color: #242b2e !important;
+}
+
+.rows {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dish-card {
+  text-align: left;
+  color: #242b2e;
+}
+
+.card-img {
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.dish-title {
+  color: #eb6841;
+  font-weight: bold;
+}
+
+.dish-price {
+  float: right;
+  color: #eb6841;
 }

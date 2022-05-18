@@ -12,6 +12,7 @@ const Header = ({ mode, setMode }) => {
         </Button>
       </div>
       <h1 className={`pt-5 ${mode}`}>Our Menu</h1>
+      <hr />
     </Container>
   );
 };
