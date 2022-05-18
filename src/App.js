@@ -10,7 +10,7 @@ function App() {
   return (
     <div className={`App ${mode}`}>
       <Header mode={mode} setMode={setMode} />
-      <Menu mode={mode} />
+      <Menu />
     </div>
   );
 }
